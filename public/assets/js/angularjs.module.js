@@ -1,0 +1,1 @@
+const app = angular.module('Silsilah', ['ngSanitize', 'ui.utils.masks', 'ngFileUpload']);

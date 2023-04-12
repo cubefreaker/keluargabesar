@@ -1,0 +1,107 @@
+body {
+    overflow: hidden !important;
+}
+.f3 {
+    top: -8px;
+    left: -8px;
+    /* height: 100vh;
+    width: 100vw; */
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.f3 .cursor-pointer {
+    cursor: pointer;
+}
+.f3 svg.main_svg {
+    width: 100%;
+    height: 100%;
+    /* background-color: #3b5560;
+    color: #3b5560; */
+    background-color: #4C7BE5;
+    color: #4C7BE5;
+}
+.f3 svg.main_svg text {
+    /* fill: currentColor; */
+    fill: #fff;
+}
+.f3 rect.card-female,
+.f3 .card-female .card-body-rect,
+.f3 .card-female .text-overflow-mask {
+    fill:#F57C00;
+}
+.f3 rect.card-male,
+.f3 .card-male .card-body-rect,
+.f3 .card-male .text-overflow-mask {
+    fill: #039BE5;
+}
+.f3 .card-genderless .card-body-rect,
+.f3 .card-genderless .text-overflow-mask {
+    fill: lightgray;
+}
+.f3 .card_add .card-body-rect {
+    /* fill: #3b5560; */
+    fill: #4C7BE5;
+    stroke-width: 4px;
+    stroke: #fff;
+    cursor: pointer;
+}
+.f3 g.card_add text {
+    fill: #fff;
+}
+.f3 .card-main {
+    stroke: #000;
+}
+.f3 .card_family_tree rect {
+    transition: 0.3s;
+}
+.f3 .card_family_tree:hover rect {
+    transform: scale(1.1);
+}
+.f3 .card_add_relative {
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+}
+.f3 .card_add_relative circle {
+    fill: rgba(0, 0, 0, 0);
+}
+.f3 .card_add_relative:hover {
+    color: black;
+}
+.f3 .card_edit.pencil_icon {
+    /* color: #fff; */
+    color: #000000;
+    transition: 0.3s;
+}
+.f3 .card_edit.pencil_icon:hover {
+    color: black;
+}
+.f3 .card_break_link,
+.f3 .link_upper,
+.f3 .link_lower,
+.f3 .link_particles {
+    transform-origin: 50% 50%;
+    transition: 1s;
+}
+.f3 .card_break_link {
+    color: #fff;
+}
+.f3 .card_break_link.closed .link_upper {
+    transform: translate(-140.5px, 655.6px);
+}
+.f3 .card_break_link.closed .link_upper g {
+    transform: rotate(-58deg);
+}
+.f3 .card_break_link.closed .link_particles {
+    transform: scale(0);
+}
+.f3 .input-field input {
+    height: 2.5rem !important;
+}
+.f3 .input-field > label:not(.label-icon).active {
+    -webkit-transform: translateY(-8px) scale(0.8);
+    transform: translateY(-8px) scale(0.8);
+}
