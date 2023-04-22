@@ -40,6 +40,8 @@ class ClansModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
+    protected $clans;
+
     function __construct()
     {
         parent::__construct();

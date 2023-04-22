@@ -87,15 +87,14 @@
           </div>
           <ul class="sidebar-menu">
               <li class="menu-header">Home</li>
-              <li><a class="nav-link" href="<?=base_url()?>/memberTree<?=$slug?>"><i class="ion ion-network"></i><span>Silsilah</span></a></li>
-              <li class="menu-header">Keluarga</li>
               <li><a class="nav-link" href="<?=base_url()?>/member<?=$slug?>"><i class="ion ion-ios-people"></i><span>Anggota</span></a></li>
-              <li><a class="nav-link" href="<?=base_url()?>/gallery<?=$slug?>"><i class="ion ion-image"></i><span>Galeri</span></a></li>
+              <li><a class="nav-link" href="<?=base_url()?>/memberTree<?=$slug?>"><i class="ion ion-network"></i><span>Silsilah</span></a></li>
+              <li><a class="nav-link" href="<?=base_url()?>/memberCash<?=$slug?>"><i class="ion ion-social-usd"></i><span>KAS</span></a></li>
+              <!-- <li><a class="nav-link" href="<?=base_url()?>/gallery<?=$slug?>"><i class="ion ion-image"></i><span>Galeri</span></a></li> -->
               <?php if(!logged_in()){?>
                 <li class="menu-header">Admin</li>
                 <li><a class="nav-link" href="<?=base_url()?>/login"><i class="ion ion-log-in"></i><span>Login</span></a></li>
               <?php }?>
-              <!-- <li><a class="nav-link" href="<?=base_url()?>/tipe-tagihan"><i class="ion ion-card"></i><span>Tipe Tagihan</span></a></li> -->
               <!-- <li class="menu-header">Data</li> -->
               <!-- <li><a class="nav-link" href="<?=base_url()?>/users"><i class="ion ion-ios-people"></i> <span>Users</span></a></li> -->
           </ul>

@@ -365,8 +365,8 @@
                                                 <div class="col-sm-3">
                                                     <h6 class="mb-0">Bapak</h6>
                                                 </div>
-                                                <div class="col-sm-9 text-secondary">
-                                                    <a href="" ng-click="changeDetail(dataDetail.father_id, 'id')">{{ dataDetail.father_name || '-'}} {{dataDetail.father_name && dataDetail.status == 'D' ? '(Alm)' : ''}}</a>
+                                                <div class="col-sm-9 text-secondary" ng-click="changeDetail(dataDetail.father_id, 'id')">
+                                                    <a href="">{{ dataDetail.father_name || '-'}} {{dataDetail.father_name && dataDetail.status == 'D' ? '(Alm)' : ''}}</a>
                                                 </div>
                                             </div>
                                             <hr>
@@ -374,8 +374,8 @@
                                                 <div class="col-sm-3">
                                                     <h6 class="mb-0">Ibu</h6>
                                                 </div>
-                                                <div class="col-sm-9 text-secondary">
-                                                    <a href="" ng-click="changeDetail(dataDetail.mother_id, 'id')">{{ dataDetail.mother_name || '-'}} {{dataDetail.mother_name && dataDetail.status == 'D' ? '(Alm)' : ''}}</a>
+                                                <div class="col-sm-9 text-secondary" ng-click="changeDetail(dataDetail.mother_id, 'id')">
+                                                    <a href="">{{ dataDetail.mother_name || '-'}} {{dataDetail.mother_name && dataDetail.status == 'D' ? '(Alm)' : ''}}</a>
                                                 </div>
                                             </div>
                                             <hr>
@@ -437,7 +437,7 @@
     <script src="<?=base_url()?>/assets/lib/jquery/jquery.uploadPreview.min.js"></script>
     <script>
         $('.datepicker').datepicker({
-            autoClose: true,
+            autoclose: true,
             format: 'yyyy-mm-dd',
             todayHighlight: true
         });

@@ -32,7 +32,7 @@ class ClanController extends BaseController
             return redirect()->to('/login');
         }
         
-        return redirect()->to('/memberTree');
+        return redirect()->to('/member');
     }
 
     public function clanMemberTree($slug = '')

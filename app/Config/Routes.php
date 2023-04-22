@@ -34,14 +34,22 @@ $routes->setAutoRoute(true);
 // $routes->get('/', 'HomeController::index');
 // $routes->get('keluarga/(:any)', 'HomeController::family/$1');
 $routes->get('/', 'ClanController::index');
+$routes->get('member', 'ClanController::clanMember');
 $routes->get('member/(:any)', 'ClanController::clanMember/$1');
 $routes->get('memberTree', 'ClanController::clanMemberTree');
 $routes->get('memberTree/(:any)', 'ClanController::clanMemberTree/$1');
+$routes->get('memberCash', 'ClanFinanceController::index');
+$routes->get('memberCash/(:any)', 'ClanFinanceController::index/$1');
+$routes->post('memberCash/(:any)/search', 'ClanFinanceController::search/$1');
 $routes->get('export/excel/(:any)', 'ClanController::exportExcel/$1');
+$routes->get('export/excelCash/(:any)', 'ClanFinanceController::exportExcel/$1');
 $routes->group('admin', ['filter' => 'login'], function($routes){
     $routes->post('member/add', 'ClanController::insert');
     $routes->post('member/edit', 'ClanController::update');
     $routes->post('member/delete', 'ClanController::delete');
+    $routes->post('memberCash/add', 'ClanFinanceController::insert');
+    $routes->post('memberCash/edit', 'ClanFinanceController::update');
+    $routes->post('memberCash/delete', 'ClanFinanceController::delete');
 });
 
 /*
